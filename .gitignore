@@ -1,0 +1,8 @@
+# ./api related files & directories
+./api/node_modules
+
+# ./client related files & directories
+./client/node_modules
+
+# root related files & directories
+node_modules
