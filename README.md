@@ -88,7 +88,8 @@ Here are the steps I took to accomplish this project.
 
 1. Start the README and Git (5 min).
 2. Setup Docker for developement (2 hrs).
-3. 
+3. Troubleshoot React Hot Reloading not working (2 hrs).
+4. Design super basic frontend for testing ().
 
 **Total project time (including coding & research): **
 
@@ -104,6 +105,7 @@ These are some of the guides/tutorials I followed to help me learn the technolog
 
 - [Dockerizing React & Node.js web application](https://dev.to/andrewbaisden/how-to-use-docker-in-your-node-and-react-applications-597e)
 - [`npx create-react-app myapp` command not working](https://stackoverflow.com/questions/53657920/i-cant-install-react-using-npx-create-react-app)
+- [React Hot Reload not working in Docker Container - Stack Overflow Solution](https://stackoverflow.com/a/72478714)
 - 
 
 ## Contact
