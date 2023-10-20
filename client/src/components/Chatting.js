@@ -6,7 +6,13 @@ import '../component_css/chatting.css'
  */
 export default function ChatWindow() {
     return (
-        <ChatHeader />
+        <div id="chat_chatting_page">
+            <ChatHeader />
+            <div id="chat_list_and_window">
+                <ChatConverstaionList />
+                <ChatChattingWindow />
+            </div>
+        </div>
     );
 }
 
@@ -32,12 +38,28 @@ export function ChatHeader() {
 }
 
 /**
+ * Chat Window
+ */
+export function ChatChattingWindow() {
+    return (
+        <div id="chat_active_chat"></div>
+    );
+}
+
+/**
  * Chat Conversation List
  */
 export function ChatConverstaionList() {
     return (
-        <div id="chat_converstion_list">
-            <ChatConversation />
+        <div id="chat_conversation_list">
+            <ChatConversationItem 
+                username={'username_1'}
+                last_message={'January 1'}
+            />
+            <ChatConversationItem 
+                username={'username_b'}
+                last_message={'January 2'}
+            />
         </div>
     );
 }
@@ -48,10 +70,21 @@ export function ChatConverstaionList() {
  * @param username
  * @param last_message
  */
-export function ChatConversation({ username, last_message }) {
+export function ChatConversationItem({ username, last_message }) {
     return (
         <div class="chat_conversation_list_item">
-            
+            <div id="">
+                <img
+                    src="../images/default_profile_photo.png"
+                    alt="Profile"
+                    width={50}
+                    height={50}
+                />
+                <p>{username}</p>
+            </div>
+            <div id="last_message_date_time">
+                <p>{last_message}</p>
+            </div>
         </div>
     );
 }
