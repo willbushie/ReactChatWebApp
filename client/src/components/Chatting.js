@@ -1,4 +1,8 @@
+/* Global component CSS */
+import '../component_css/global.css'
+/* Chatting components specific CSS */
 import '../component_css/chatting.css'
+
 
 
 /**
@@ -51,7 +55,7 @@ export function ChatChattingWindow() {
  */
 export function ChatConverstaionList() {
     return (
-        <div id="chat_conversation_list">
+        <div class="scroll_container" id="chat_conversation_list">
             <ChatConversationItem 
                 username={'username_1'}
                 last_message={'January 1'}

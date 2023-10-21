@@ -1,0 +1,33 @@
+/* DEFAULT GLOBAL STYLING */
+
+
+
+/* Scrollbars */
+.scroll_container {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(80, 80, 80) rgb(119, 119, 119);
+}
+
+#scroll_container::-webkit-scrollbar-thumb {
+    background: rgba(159, 159, 159, 1);
+}
+
+#scroll_container::-webkit-scrollbar-track {
+    background: rgba(121, 121, 121, 1);
+}
+
+/* Buttons */
+.default_button {
+    background-color: rgba(99, 99, 99, 1);
+    color: rgba(200, 200, 200, 1);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    height: 35px;
+    width: 50px;
+    margin: 10px; 
+}
+
+.default_button:active {
+    background-color: rgba(58, 58, 58, 1);
+}
