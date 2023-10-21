@@ -42,15 +42,6 @@ export function ChatHeader() {
 }
 
 /**
- * Chat Window
- */
-export function ChatChattingWindow() {
-    return (
-        <div id="chat_active_chat"></div>
-    );
-}
-
-/**
  * Chat Conversation List
  */
 export function ChatConverstaionList() {
@@ -58,12 +49,64 @@ export function ChatConverstaionList() {
         <div class="scroll_container" id="chat_conversation_list">
             <ChatConversationItem 
                 username={'username_1'}
-                last_message={'January 1'}
+                last_message={'January 12'}
             />
             <ChatConversationItem 
                 username={'username_b'}
+                last_message={'January 11'}
+            />
+            <ChatConversationItem 
+                username={'username_c'}
+                last_message={'January 10'}
+            />
+            <ChatConversationItem 
+                username={'username_d'}
+                last_message={'January 9'}
+            />
+            <ChatConversationItem 
+                username={'username_e'}
+                last_message={'January 8'}
+            />
+            <ChatConversationItem 
+                username={'username_f'}
+                last_message={'January 7'}
+            />
+            <ChatConversationItem 
+                username={'username_g'}
+                last_message={'January 6'}
+            />
+            <ChatConversationItem 
+                username={'username_h'}
+                last_message={'January 5'}
+            />
+            <ChatConversationItem 
+                username={'username_i'}
+                last_message={'January 4'}
+            />
+            <ChatConversationItem 
+                username={'username_j'}
+                last_message={'January 3'}
+            />
+            <ChatConversationItem 
+                username={'username_k'}
                 last_message={'January 2'}
             />
+            <ChatConversationItem 
+                username={'username_l'}
+                last_message={'January 1'}
+            />
+        </div>
+    );
+}
+
+/**
+ * Chat Conversation List Options
+ */
+export function ChatConversationListOptions() {
+    return (
+        <div id="chat_conversation_list_options">
+            <button class="default_button" id="new_chat_button">New</button>
+            <button class="default_button" id="sort_chats_button">Sort</button>
         </div>
     );
 }
@@ -94,6 +137,29 @@ export function ChatConversationItem({ username, last_message }) {
 }
 
 /**
+ * Chat Window
+ */
+export function ChatChattingWindow() {
+    return (
+        <div id="chat_active_chat">
+            <div id="chat_messages_section"></div>
+            <ChatWindowEditor />
+        </div>
+    );
+}
+
+/**
  * Chat Message
  */
 export function ChatMessage() {}
+
+/**
+ * Chat Window Text Editor
+ */
+export function ChatWindowEditor() {
+    return (
+        <div id="chat_active_message_editor">
+            <textarea></textarea>
+        </div>
+    );
+}
