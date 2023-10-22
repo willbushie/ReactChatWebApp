@@ -89,7 +89,7 @@ Here are the steps I took to accomplish this project.
 1. Start the README and Git (5 min).
 2. Setup Docker for developement (2 hrs).
 3. Troubleshoot React Hot Reloading not working (2 hrs).
-4. Design basic frontend for testing (5 hrs).
+4. Design basic frontend for testing (5 hrs 10 min).
 
 **Total project time (including coding & research): **
 

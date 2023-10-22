@@ -47,6 +47,7 @@ export function ChatHeader() {
 export function ChatConverstaionList() {
     return (
         <div class="scroll_container" id="chat_conversation_list">
+            <ChatConversationListOptions />
             <ChatConversationItem 
                 username={'username_1'}
                 last_message={'January 12'}
